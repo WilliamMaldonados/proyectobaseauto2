@@ -1,0 +1,300 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css"><!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.11.3/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.11.3/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.11.3/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Demo Project using Serenity and Cucumber</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="33386ef6a6a8247a317f8da4e73a41f6b394ad33f6df74de4c6fa213a6e772ce.html">Declare To The Republic Bank An Other Operations</a></span>
+                > <span class="truncate-60"><a
+                    href="606bb789f1336d09b58a63998dae282abb9883a68cbd5294ebd44827fecd65d2.html">Fill out the other operations forms and formula 10 for devolution to generate the file that had to be sent to the Republic Bank </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 30-01-2024 14:23</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">Declare To The Republic Bank An Other Operations </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                As a user<br />
+I want to be able to declare to the Republic Bank my international investments<br />
+with type of operation Initial
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="ec3644e9342d32fe427f28bfa83a3084b3999493dbafdd95c2d0cbb278b71b7f.html">Tag
+                                    (tag)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="bi bi-tag-fill"></i>&nbsp;<a class="tagLink" style="background:default;" href="28c8038e97abb6f06efb5cc9e19e831b4d3b831c39a4c8d5dc2cbc99b27d87ac.html">Declare International Investments Initial
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Fill out the other operations forms and formula 10 for devolution to generate the file that had to be sent to the Republic Bank
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given that the user is logged into the application of Sucursal Virtual Empresas and Declarations Of Change HDC other operations for devolution<br>When the user fills the form of other operations for devolution<br><table class='embedded'><thead><th>F5_INPUT_COIN</th><th>F5_INPUT_VALUE_USD2</th><th>F5_INPUT_OBSERVATIONS</th></thead><tbody><tr><td>&lt;F5_INPUT_COIN&gt;</td><td>&lt;F5_INPUT_VALUE_USD2&gt;</td><td>&lt;F5_INPUT_OBSERVATIONS&gt;</td></tr></tbody></table><br>Then the user see then form op is created successfully for devolution</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="e00dc066734a4085fef0f30ba00b7e9d0adc2f989675dd45743f042c8d12582b.png" title=" 1: Fill out the other operations forms and formula 10 for devolution to generate the file that had to be sent to the Republic Bank ({F5_INPUT_COIN=0.01, F5_INPUT_VALUE_USD2=125, F5_INPUT_OBSERVATIONS=Pruebaf5})" width="1920"/>
+                <img src="e00dc066734a4085fef0f30ba00b7e9d0adc2f989675dd45743f042c8d12582b.png" title=" Given that the user is logged into the application of Sucursal Virtual Empresas and Declarations Of Change HDC other operations for devolution" width="1920"/>
+                <img src="e00dc066734a4085fef0f30ba00b7e9d0adc2f989675dd45743f042c8d12582b.png" title=" user opens the Hdc local" width="1920"/>
+                <img src="e00dc066734a4085fef0f30ba00b7e9d0adc2f989675dd45743f042c8d12582b.png" title=" User go app" width="1920"/>
+                <img src="e00dc066734a4085fef0f30ba00b7e9d0adc2f989675dd45743f042c8d12582b.png" title=" user clicks on Boton local" width="1920"/>
+                <img src="17097a151299f2b4007406021187aad05be89fd5d6eb8ae1f8f058f8de6d0739.png" title=" user clicks on Boton local (completed)" width="1920"/>
+                <img src="17097a151299f2b4007406021187aad05be89fd5d6eb8ae1f8f058f8de6d0739.png" title=" user clicks on Processing of Statements of Change menu" width="1920"/>
+                <img src="eea680d11abc96a44223401a170aa3f9c9ad4b7ca1aa6a9ae1450a688e3c21a7.png" title=" user clicks on Processing of Statements of Change menu (completed)" width="1920"/>
+                <img src="eea680d11abc96a44223401a170aa3f9c9ad4b7ca1aa6a9ae1450a688e3c21a7.png" title=" User go app (completed)" width="1920"/>
+                <img src="eea680d11abc96a44223401a170aa3f9c9ad4b7ca1aa6a9ae1450a688e3c21a7.png" title=" Given that the user is logged into the application of Sucursal Virtual Empresas and Declarations Of Change HDC other operations for devolution (completed)" width="1920"/>
+                <img src="eea680d11abc96a44223401a170aa3f9c9ad4b7ca1aa6a9ae1450a688e3c21a7.png" title=" When the user fills the form of other operations for devolution
+| F5_INPUT_COIN | F5_INPUT_VALUE_USD2 | F5_INPUT_OBSERVATIONS |
+| 0.01 | 125 | Pruebaf5 |" width="1920"/>
+                <img src="eea680d11abc96a44223401a170aa3f9c9ad4b7ca1aa6a9ae1450a688e3c21a7.png" title=" User other operations devolution" width="1920"/>
+                <img src="eea680d11abc96a44223401a170aa3f9c9ad4b7ca1aa6a9ae1450a688e3c21a7.png" title=" user clicks on btn Exports form" width="1920"/>
+                <img src="227db4d009611b92889f20485b203cf51899aad4fd6639e81f55645a5c1e3015.png" title=" user clicks on btn Exports form (completed)" width="1920"/>
+                <img src="227db4d009611b92889f20485b203cf51899aad4fd6639e81f55645a5c1e3015.png" title=" user clicks on BNT New Form" width="1920"/>
+                <img src="8cc3d00abb037b6e8a481d6d74898c6ee204369c226c4417a02c9a12363a916f.png" title=" user clicks on BNT New Form (completed)" width="1920"/>
+                <img src="8cc3d00abb037b6e8a481d6d74898c6ee204369c226c4417a02c9a12363a916f.png" title=" user clicks on Selector code and number" width="1920"/>
+                <img src="7fd32bb387b0df68adf3caa4b32c1e2f9737b28288dee27ae859d5c4b5ec849f.png" title=" user clicks on Selector code and number (completed)" width="1920"/>
+                <img src="7fd32bb387b0df68adf3caa4b32c1e2f9737b28288dee27ae859d5c4b5ec849f.png" title=" user clicks on Type code and Devolution" width="1920"/>
+                <img src="daf3eaf07f803e320f4f0aa88c219d70eae51cff8a25613546d7e06d68b9e80d.png" title=" user clicks on Type code and Devolution (completed)" width="1920"/>
+                <img src="daf3eaf07f803e320f4f0aa88c219d70eae51cff8a25613546d7e06d68b9e80d.png" title=" user clicks on Selector operation" width="1920"/>
+                <img src="54466a081355c483690119f722217e2aeb4c5ca4fcb1b904efd78edad703c4c2.png" title=" user clicks on Selector operation (completed)" width="1920"/>
+                <img src="54466a081355c483690119f722217e2aeb4c5ca4fcb1b904efd78edad703c4c2.png" title=" user clicks on Type of operation" width="1920"/>
+                <img src="fbf6307ae4ed8e8c0d78a561a610825660a94f50aeba62b307fbfb1c8fcf5d42.png" title=" user clicks on Type of operation (completed)" width="1920"/>
+                <img src="fbf6307ae4ed8e8c0d78a561a610825660a94f50aeba62b307fbfb1c8fcf5d42.png" title=" user clicks on Selector Account Compensation" width="1920"/>
+                <img src="3e73d1dc966cf024400d9f32ad0c742785164761e88a5c0aa050658af86abb00.png" title=" user clicks on Selector Account Compensation (completed)" width="1920"/>
+                <img src="3e73d1dc966cf024400d9f32ad0c742785164761e88a5c0aa050658af86abb00.png" title=" user clicks on Type Account Compensation" width="1920"/>
+                <img src="3b66bb1a31612d975506497a81d6f8e9a7b662d85de705a916f67b8cf000db90.png" title=" user clicks on Type Account Compensation (completed)" width="1920"/>
+                <img src="324e9532be3f55edc92cd0b591fc8a9dfa6b48a08ad0d8793eb6f3dffb497758.png" title=" user clicks on Selector coin" width="1920"/>
+                <img src="03c2c176707c7040d42ebf7e2542da61ff1474854e1813cae0d89ff727698ed5.png" title=" user clicks on Selector coin (completed)" width="1920"/>
+                <img src="03c2c176707c7040d42ebf7e2542da61ff1474854e1813cae0d89ff727698ed5.png" title=" user clicks on type coin" width="1920"/>
+                <img src="b689507adcfcccbba299811c22a80b94f460c676d3732fba9f8dcff52b293eb5.png" title=" user clicks on type coin (completed)" width="1920"/>
+                <img src="b689507adcfcccbba299811c22a80b94f460c676d3732fba9f8dcff52b293eb5.png" title=" user enters '0.01' into  input coin" width="1920"/>
+                <img src="d8709ef8a9c631d1e162e0d47524f69a893562bee9114248d0d150df7e6755ad.png" title=" user enters '0.01' into  input coin (completed)" width="1920"/>
+                <img src="4d0162a50e7f194ef8f758f41136b6b41ce6f284ee502b9b07d8342edf2ea3a0.png" title=" user clicks on Selector Numeral" width="1920"/>
+                <img src="7f09050a8451d31d0431e4dccf16e2251905650532426d2217509623f04e2d23.png" title=" user clicks on Selector Numeral (completed)" width="1920"/>
+                <img src="7f09050a8451d31d0431e4dccf16e2251905650532426d2217509623f04e2d23.png" title=" user clicks on Type Numeral" width="1920"/>
+                <img src="8a2d5b7964b94488d805268849e1b9d2c104fbe47e2117d2773ee71178d906a5.png" title=" user clicks on Type Numeral (completed)" width="1920"/>
+                <img src="8a2d5b7964b94488d805268849e1b9d2c104fbe47e2117d2773ee71178d906a5.png" title=" user types 'ARROW_RIGHT' in Input Value usd2" width="1920"/>
+                <img src="4c04956d3bdcf2c915821a7780430a70e522aad87043b86a218eccaa886fd26b.png" title=" user types 'ARROW_RIGHT' in Input Value usd2 (completed)" width="1920"/>
+                <img src="4c04956d3bdcf2c915821a7780430a70e522aad87043b86a218eccaa886fd26b.png" title=" user types 'ARROW_RIGHT' in Input Value usd2" width="1920"/>
+                <img src="4c04956d3bdcf2c915821a7780430a70e522aad87043b86a218eccaa886fd26b.png" title=" user enters '125' into Input Value usd2" width="1920"/>
+                <img src="3ad19390eb96cfd6544646673d7f37835e5802c3da3db1a707f337f146d4aaad.png" title=" user enters '125' into Input Value usd2 (completed)" width="1920"/>
+                <img src="3ad19390eb96cfd6544646673d7f37835e5802c3da3db1a707f337f146d4aaad.png" title=" user enters 'Pruebaf5' into Input observations" width="1920"/>
+                <img src="76d5ff5758c722b918165c55d62a5ac8190663c46a9ebac3cf92c5b36d088ee7.png" title=" user enters 'Pruebaf5' into Input observations (completed)" width="1920"/>
+                <img src="76d5ff5758c722b918165c55d62a5ac8190663c46a9ebac3cf92c5b36d088ee7.png" title=" user clicks on Selector Contrapart" width="1920"/>
+                <img src="84d129163b7edc5d411924593faa4493b16469d4c9731beaca89c9f50e48dca0.png" title=" user clicks on Selector Contrapart (completed)" width="1920"/>
+                <img src="84d129163b7edc5d411924593faa4493b16469d4c9731beaca89c9f50e48dca0.png" title=" user clicks on Type Contrapart" width="1920"/>
+                <img src="3ecb98cf9bf8036e90bf1500577bc855295752af45614cf0062d31892b6a9453.png" title=" user clicks on Type Contrapart (completed)" width="1920"/>
+                <img src="3ecb98cf9bf8036e90bf1500577bc855295752af45614cf0062d31892b6a9453.png" title=" user clicks on Button Save Form" width="1920"/>
+                <img src="397937370f140be67229d465806957a286240b6ab22a2c5ad4bdbd77cb4e7fdc.png" title=" user clicks on Button Save Form (completed)" width="1920"/>
+                <img src="397937370f140be67229d465806957a286240b6ab22a2c5ad4bdbd77cb4e7fdc.png" title=" user clicks on Button Save Form" width="1920"/>
+                <img src="fd8201d17b37134d80ea678b1ce93269f0bd7912eb845b8fe141b88e553b64fd.png" title=" user clicks on Button Save Form (completed)" width="1920"/>
+                <img src="3e69f3f4be9cec694df6538b6d4b595fdab30ec454ab3679b7de610f3d7f0496.png" title=" User other operations devolution (completed)" width="1920"/>
+                <img src="3e69f3f4be9cec694df6538b6d4b595fdab30ec454ab3679b7de610f3d7f0496.png" title=" When the user fills the form of other operations for devolution
+| F5_INPUT_COIN | F5_INPUT_VALUE_USD2 | F5_INPUT_OBSERVATIONS |
+| 0.01 | 125 | Pruebaf5 | (completed)" width="1920"/>
+                <img src="3e69f3f4be9cec694df6538b6d4b595fdab30ec454ab3679b7de610f3d7f0496.png" title=" Then the user see then form op is created successfully for devolution" width="1920"/>
+                <img src="3e69f3f4be9cec694df6538b6d4b595fdab30ec454ab3679b7de610f3d7f0496.png" title=" 1: Fill out the other operations forms and formula 10 for devolution to generate the file that had to be sent to the Republic Bank ({F5_INPUT_COIN=0.01, F5_INPUT_VALUE_USD2=125, F5_INPUT_OBSERVATIONS=Pruebaf5}) (completed): <span class='success-color'>SUCCESS</span>" width="1920"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 3.3.10</span>
+</div>
+</body>
+</html>
