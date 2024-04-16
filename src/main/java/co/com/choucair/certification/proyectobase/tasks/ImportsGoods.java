@@ -48,7 +48,7 @@ public ImportsGoods(Map<String,String> data){this.data=data;}
             Click.on(F1_SELECTOR_NUMERAL_2),
             Click.on(F1_NUMERAL_2),
             Enter.theValue(data.get("F1_INPUT_CURRENCY_AMOUNT_2")).into(F1_INPUT_CURRENCY_AMOUNT_2),
-            Enter.theValue(data.get("F1_INPUT_AMOUNT_2")).into(F1_INPUT_AMOUNT_2),
+            //Enter.theValue(data.get("F1_INPUT_AMOUNT_2")).into(F1_INPUT_AMOUNT_2),
             Scroll.to(F1_SELECTOR_NUMERAL_2),
             Enter.theValue(data.get("F1_TEXT_AREA")).into(F1_TEXT_AREA),
             Enter.theValue(data.get("F1_IMPORTATION_NUMBER")).into(F1_IMPORTATION_NUMBER),
@@ -56,6 +56,7 @@ public ImportsGoods(Map<String,String> data){this.data=data;}
             Click.on(F1_BTN_ADDITION),
             Click.on(F1_RADIO_BTN_COMPLETE),
             Click.on(F1_BTN_SAVE),
+
             WaitUntil.the(Forms.MESSAGE,isCurrentlyVisible()).forNoMoreThan(60).seconds()
         );
 

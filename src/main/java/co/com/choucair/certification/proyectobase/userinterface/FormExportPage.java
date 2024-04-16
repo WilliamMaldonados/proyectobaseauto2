@@ -16,7 +16,7 @@ public class FormExportPage extends PageObject {
     public static final Target F2_DATA_PICKER= Target.the("Data picker").located(By.xpath("//*[@id=\"ngb-panel-0\"]/div/div/div[2]/div/div/div/ngb-datepicker/div[2]/div/ngb-datepicker-month/div[6]/div[1]/div"));
     public static final Target F2_INPUT_NUMBER_MOD= Target.the("NUmber of Form").located(By.xpath("(//input[@id='b3_number'])[1]"));
     public static final Target F2_SELECTOR_ACCOUNT = Target.the("Selector account").located(By.xpath("(//select[@id='b2_codeAndNumber'])[1]"));
-    public static final Target F2_ACCOUNT = Target.the("Selector code coin").located(By.xpath("(//option[@value='80700000022'][normalize-space()='80700000022 - 2198704001 - BANCOLOMBIA - PANAMA'])[1]"));
+    public static final Target F2_ACCOUNT = Target.the("Selector code coin").located(By.xpath("/html/body/app-sub-root/app-root/div/div/div[2]/app-container/main/div/app-form/div/form/div[2]/div/div[4]/select/option[4]"));
     public static final Target F2_COIN_REINTEGRATE = Target.the("Selector coin integrate").located(By.xpath("(//select[@id='b5_turningCurrencyCode'])[1]"));
     public static final Target F2_TYPE_COIN= Target.the("Type of coin").located(By.xpath("/html/body/app-sub-root/app-root/div/div/div[2]/app-container/main/div/app-form/div/form/ngb-accordion/div[3]/div[2]/div/div/div[1]/select/option[2]"));
     public static final Target F2_INPUT_VALOR_COIN= Target.the("Input currency amount").located(By.xpath("(//input[@id='b5_turningCurrencyAmount'])[1]"));

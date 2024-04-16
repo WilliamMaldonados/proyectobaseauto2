@@ -15,18 +15,16 @@ public class FormImportPage extends PageObject {
     public static final Target F1_DATA_PICKER= Target.the("Data picker").located(By.xpath("/html/body/app-sub-root/app-root/div/div/div[2]/app-container/main/div/app-form/div/form/ngb-accordion/div[1]/div[2]/div/div/div[2]/div/div/div/ngb-datepicker/div[2]/div/ngb-datepicker-month/div[6]/div[1]/div"));
     public static final Target F1_INPUT_NUMBER_MOD= Target.the("Data picker").located(By.xpath("  (//input[@id='b3_number'])[1]"));
     public static final Target F1_SELECTOR_CON_NUMBER = Target.the("Selector code and number").located(By.xpath("//select[@id='b2_codeAndNumber']"));
-    public static final Target F1_CON_NUMBER = Target.the("Selector code and number").located(By.xpath("/html/body/app-sub-root/app-root/div/div/div[2]/app-container/main/div/app-form/div/form/div[2]/div/div[4]/select/option[2]"));
+    public static final Target F1_CON_NUMBER = Target.the("Selector code and number").located(By.xpath("/html/body/app-sub-root/app-root/div/div/div[2]/app-container/main/div/app-form/div/form/div[2]/div/div[4]/select/option[4]"));
     public static final Target F1_SELECTOR_CODE_COIN = Target.the("Selector code coin").located(By.xpath("(//select[@id='b5_turningCurrencyCode'])[1]"));
     public static final Target F1_CODE_COIN = Target.the("Selector code coin").located(By.xpath("/html/body/app-sub-root/app-root/div/div/div[2]/app-container/main/div/app-form/div/form/ngb-accordion/div[3]/div[2]/div/div[1]/div/div/div[1]/select/option[2]"));
     public static final Target F1_SELECTOR_NUMERAL= Target.the("Selector numeral").located(By.xpath("(//select[@id='b5_numeral'])[1]"));
     public static final Target F1_NUMERAL1= Target.the("Selector numeral").located(By.xpath("/html/body/app-sub-root/app-root/div/div/div[2]/app-container/main/div/app-form/div/form/ngb-accordion/div[3]/div[2]/div/div[1]/div/div/div[3]/select/option[2]"));
     public static final Target F1_INPUT_CURRENCY_AMOUNT= Target.the("Input currency amount").located(By.xpath("(//input[@id='b5_turningCurrencyAmount'])[1]"));
-
     public static final Target F1_SELECTOR_CODE_COIN_2= Target.the("Selector code coin 2").located(By.xpath("(//select[@id='b5_turningCurrencyCode2'])[1]"));
-    public static final Target F1_CODE_COIN_2= Target.the("Selector code coin 2").located(By.xpath("/html/body/app-sub-root/app-root/div/div/div[2]/app-container/main/div/app-form/div/form/ngb-accordion/div[3]/div[2]/div/div[2]/div/div/div[1]/select/option[3]"));
+    public static final Target F1_CODE_COIN_2= Target.the("Selector code coin 2").located(By.xpath("/html/body/app-sub-root/app-root/div/div/div[2]/app-container/main/div/app-form/div/form/ngb-accordion/div[3]/div[2]/div/div[2]/div/div/div[1]/select/option[2]"));
     public static final Target F1_SELECTOR_NUMERAL_2= Target.the("Selector numeral 2").located(By.xpath("(//select[@id='b5_numeral2'])[1]"));
     public static final Target F1_NUMERAL_2= Target.the("Selector numeral 2").located(By.xpath("/html/body/app-sub-root/app-root/div/div/div[2]/app-container/main/div/app-form/div/form/ngb-accordion/div[3]/div[2]/div/div[2]/div/div/div[3]/select/option[3]"));
-
     public static final Target F1_INPUT_CURRENCY_AMOUNT_2= Target.the("Input currency amount 2").located(By.xpath("(//input[@id='b5_turningCurrencyAmount2'])[1]"));
     public static final Target F1_INPUT_AMOUNT_2= Target.the("Input  amount 2").located(By.xpath("(//input[@id='b5_usdAmount2'])[1]"));
     public static final Target F1_TEXT_AREA= Target.the("Text Area").located(By.xpath("(//textarea[@id='b6_observation'])[1]"));
