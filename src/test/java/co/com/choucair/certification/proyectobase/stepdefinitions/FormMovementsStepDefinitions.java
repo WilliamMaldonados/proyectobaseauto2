@@ -1,7 +1,9 @@
 package co.com.choucair.certification.proyectobase.stepdefinitions;
 
+import co.com.choucair.certification.proyectobase.tasks.ExternalIndebtedness;
 import co.com.choucair.certification.proyectobase.tasks.GoApp;
 import co.com.choucair.certification.proyectobase.tasks.Movements;
+import co.com.choucair.certification.proyectobase.tasks.OtherOperations;
 import co.com.choucair.certification.proyectobase.userinterface.HDCLocal;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
@@ -22,7 +24,7 @@ public class FormMovementsStepDefinitions {
         theActorInTheSpotlight().attemptsTo(GoApp.toApp(""));
     }
     @When("the user fills the form movements")
-    public void the_user_fills_the_form_movements(DataTable data) {
+    public void the_user_fills_the_form_movements(io.cucumber.datatable.DataTable data) {
         List<Map<String,String>> dataform= data.asMaps(String.class,String.class);
         theActorInTheSpotlight().attemptsTo(Movements.declare(dataform.get(0)));
     }

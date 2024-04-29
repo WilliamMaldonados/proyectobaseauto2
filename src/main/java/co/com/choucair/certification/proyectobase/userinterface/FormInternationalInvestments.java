@@ -17,8 +17,8 @@ public class FormInternationalInvestments extends PageObject {
     public static final Target F4_OPERATION = Target.the("Type of operation").located(By.xpath("//option[normalize-space()='I. Ingreso de Divisas']"));
     public static final Target F4_SELECTOR_CITY = Target.the("Selector City").located(By.xpath("(//select[@id='cityBlocktwo'])[1]"));
     public static final Target F4_TYPE_CITY= Target.the("Type of City").located(By.xpath("//option[normalize-space()='BUENOS AIRES']"));
-    public static final Target F4_SELECTOR_ACCOUNT= Target.the("Selector Account Compensation").located(By.xpath("(//select[@id='compensationAccountCodeBlocktwo'])[1]"));
-    public static final Target F4_TYPE_ACCOUNT = Target.the("Type Account Compensation").located(By.xpath("//select[@id='compensationAccountCodeBlocktwo']//option[@value='80700000022'][normalize-space()='80700000022 - 2198704001 - BANCOLOMBIA - PANAMA']"));
+    public static final Target F4_SELECTOR_ACCOUNT= Target.the("Selector Account Compensation").located(By.xpath("/html/body/app-sub-root/app-root/div/div/div[2]/app-container/main/div/app-form/div/form/div[4]/div/div[5]/select"));
+    public static final Target F4_TYPE_ACCOUNT = Target.the("Type Account Compensation").located(By.xpath("/html/body/app-sub-root/app-root/div/div/div[2]/app-container/main/div/app-form/div/form/div[4]/div/div[5]/select/option[4]"));
     public static final Target F4_BTN_CALENDAR= Target.the("Btn Calendar").located(By.xpath("(//button[@id='btn_b3_calendar'])[1]"));
     public static final Target F4_DATA_PICKER= Target.the("Selector Account Compensation").located(By.xpath("/html/body/app-sub-root/app-root/div/div/div[2]/app-container/main/div/app-form/div/form/ngb-accordion/div[1]/div[2]/div/div/div[2]/div/div/div/ngb-datepicker/div[2]/div/ngb-datepicker-month/div[4]/div[2]/div"));
     public static final Target F4_INPUT_NUMBER_MOD= Target.the("NUmber of Form").located(By.xpath("(//input[@id='numberBlockthree'])[1]"));

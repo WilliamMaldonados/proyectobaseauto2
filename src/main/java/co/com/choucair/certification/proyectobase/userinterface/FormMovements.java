@@ -18,13 +18,9 @@ public class FormMovements extends PageObject {
     public static final Target MF_CHK4 = Target.the("CHK 4").located(By.xpath("/html/body/app-sub-root/app-root/div/div/div[2]/app-container/main/div/app-form/div/div[2]/table/tr[6]/th/input"));
     public static final Target MF_CHK5 = Target.the("CHK 5").located(By.xpath("/html/body/app-sub-root/app-root/div/div/div[2]/app-container/main/div/app-form/div/div[2]/table/tr[7]/th/input"));
     public static final Target MF_BTN_CONSOLIDATE = Target.the("BNT Consolidate").located(By.xpath("/html/body/app-sub-root/app-root/div/div/div[2]/app-container/main/div/app-form/div/div[3]/button"));
+    public static final Target INPUT_NAME = Target.the("INP NAME").located(By.xpath("(//input[@id='b5_name'])[1]"));
     public static final Target MF_BTN_SAVE= Target.the("BNT Save").located(By.xpath("(//button[normalize-space()='Guardar'])[1]"));
     public static final Target MF_BTN_CANCEL= Target.the("BNT Cancel").located(By.xpath("(//button[normalize-space()='Cancelar'])[1]"));
-    public static final Target MF_BTN_XML= Target.the("BNT XML").located(By.xpath("/html/body/app-sub-root/app-root/div/div/div[2]/app-container/main/div/app-list/div/div[2]/app-table-information/div[1]/div[2]/table/tbody/tr[1]/td[3]/button/span"));
-    public static final Target MF_SELECT_TD = Target.the("Select Account").located(By.xpath("(//select[@id='idTipoIdentificacion'])[1]"));
-    public static final Target MF_TYPE_DOC = Target.the("Type Account").located(By.xpath("/html/body/ngb-modal-window/div/div/app-modal-identification-user-xmlf10/div/form/div/table/tbody/tr[1]/td[1]/select/option[2]"));
-    public static final Target MF_INPUT_DOC = Target.the("Select Account").located(By.xpath("(//input[@id='identificacion'])[1]"));
-    public static final Target MF_BTN_SAVE_2 = Target.the("btn Save 2").located(By.xpath("(//button[normalize-space()='Guardar'])[1]"));
-    public static final Target MF_MESSAGE = Target.the("Alerta creado").located(By.xpath("(//article[@id='idAlerta'])[1]"));
+    public static final Target MF_MESSAGE = Target.the("Alerta creado").located(By.xpath("(//section[@class='bc-alert-body'])[1]"));
 }
 

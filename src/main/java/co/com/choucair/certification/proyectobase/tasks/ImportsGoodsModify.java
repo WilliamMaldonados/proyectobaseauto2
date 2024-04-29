@@ -53,7 +53,7 @@ public class ImportsGoodsModify implements Task {
                 Click.on(F1_SELECTOR_NUMERAL_2),
                 Click.on(F1_NUMERAL_2),
                 Enter.theValue(data.get("F1_INPUT_CURRENCY_AMOUNT_2")).into(F1_INPUT_CURRENCY_AMOUNT_2),
-                Enter.theValue(data.get("F1_INPUT_AMOUNT_2")).into(F1_INPUT_AMOUNT_2),
+                //Enter.theValue(data.get("F1_INPUT_AMOUNT_2")).into(F1_INPUT_AMOUNT_2),
                 Scroll.to(F1_SELECTOR_NUMERAL_2),
                 Enter.theValue(data.get("F1_TEXT_AREA")).into(F1_TEXT_AREA),
                 Enter.theValue(data.get("F1_IMPORTATION_NUMBER")).into(F1_IMPORTATION_NUMBER),

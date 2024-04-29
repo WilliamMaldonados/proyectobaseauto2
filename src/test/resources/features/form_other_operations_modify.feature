@@ -14,4 +14,4 @@ Feature: Declare to the Republic Bank an International Investments
 
     Examples:
       |F5_INPUT_NUMBER_MOD|F5_INPUT_COIN|F5_INPUT_VALUE_USD2|F5_INPUT_OBSERVATIONS|
-      |      6301       |        0.01  |           125     |     modificacion    |
+      |      6838       |        0.01  |           125     |     modificacion    |

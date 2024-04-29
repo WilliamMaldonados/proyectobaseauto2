@@ -6,8 +6,10 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
+import net.serenitybdd.screenplay.actions.Hit;
 import net.serenitybdd.screenplay.actions.Scroll;
 import net.serenitybdd.screenplay.waits.WaitUntil;
+import org.openqa.selenium.Keys;
 
 import java.util.Map;
 
@@ -48,8 +50,12 @@ public class OtherOperationsModify implements Task {
                 WaitUntil.the(F5_INPUT_COIN,isCurrentlyVisible()).forNoMoreThan(60).seconds(),
                 Click.on(F5_SELECT_NUMERAL),
                 Click.on(F5_TYPE_NUMERAL),
+                Hit.the(Keys.ARROW_RIGHT).into(F5_INPUT_VALUE_USD2),
+                Hit.the(Keys.ARROW_RIGHT).into(F5_INPUT_VALUE_USD2),
                 Enter.theValue(data.get("F5_INPUT_VALUE_USD2")).into(F5_INPUT_VALUE_USD2),
                 Enter.theValue(data.get("F5_INPUT_OBSERVATIONS")).into(F5_INPUT_OBSERVATIONS),
+                Click.on(F5_SELECT_CONTRAPART),
+                Click.on(F5_TYPE_CONTRAPART),
                 Click.on(F5_BTN_ADDITION),
                 Click.on(F5_BTN_SAVE),
                 WaitUntil.the(Forms.MESSAGE,isCurrentlyVisible()).forNoMoreThan(60).seconds());

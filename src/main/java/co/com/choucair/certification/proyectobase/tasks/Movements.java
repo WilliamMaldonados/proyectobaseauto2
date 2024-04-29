@@ -1,7 +1,7 @@
 package co.com.choucair.certification.proyectobase.tasks;
 
 
-import co.com.choucair.certification.proyectobase.userinterface.Forms;
+
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
@@ -11,6 +11,7 @@ import net.serenitybdd.screenplay.actions.Scroll;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 
 import java.util.Map;
+
 
 
 import static co.com.choucair.certification.proyectobase.userinterface.FormMovements.*;
@@ -42,15 +43,12 @@ public class Movements implements Task {
                 Click.on(MF_CHK4),
                 Click.on(MF_CHK5),
                 Click.on(MF_BTN_CONSOLIDATE),
-                Scroll.to(MF_BTN_CANCEL),
+                WaitUntil.the(MF_BTN_SAVE,isCurrentlyVisible()).forNoMoreThan(60).seconds(),
+                Scroll.to(INPUT_NAME),
+                Enter.theValue(data.get("INPUT_NAME")).into(INPUT_NAME),
+                Scroll.to(MF_BTN_SAVE),
                 Click.on(MF_BTN_SAVE),
                 WaitUntil.the(MF_MESSAGE,isCurrentlyVisible()).forNoMoreThan(60).seconds()
-                //Click.on(MF_BTN_XML),
-                //Click.on(MF_SELECT_TD),
-                //Click.on(MF_TYPE_DOC),
-                //Enter.theValue(data.get("MF_INPUT_DOC")).into(MF_INPUT_DOC),
-                //Click.on(MF_BTN_SAVE_2)
-
         );
 
 
