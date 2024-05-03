@@ -17,7 +17,7 @@ public class FormExceptions extends PageObject {
     public static final Target F3a_TYPE_CITY= Target.the("Type of City").located(By.xpath("(//option[@value='149'])[1]"));
     public static final Target F3a_INPUT_NUMBER= Target.the("Input number").located(By.xpath("(//input[@id='numberBlockTwo'])[1]"));
     public static final Target F3a_SELECTOR_ACCOUNT= Target.the("Selector Account Compensation").located(By.xpath("//select[@id='compensationAccountCodeBlockTwo']"));
-    public static final Target F3a_TYPE_ACCOUNT = Target.the("Type Account Compensation").located(By.xpath("(//option[@value='80700000022'][normalize-space()='80700000022 - 2198704001 - BANCOLOMBIA - PANAMA'])[1]"));
+    public static final Target F3a_TYPE_ACCOUNT = Target.the("Type Account Compensation").located(By.xpath("/html/body/app-sub-root/app-root/div/div/div[2]/app-container/main/div/app-form/div/form/div[2]/div/div[4]/select/option[4]"));
     public static final Target F3a_BTN_CALENDAR= Target.the("Btn Calendar").located(By.xpath("(//button[@id='btn_b3_calendar'])[1]"));
     public static final Target F3a_DATA_PICKER= Target.the("Data picker").located(By.xpath("(//div[contains(text(),'19')])[1]"));
     public static final Target F3a_INPUT_NUMBER_MOD= Target.the("NUmber of Form").located(By.xpath("(//input[@id='numberBlockSeven'])[1]"));
