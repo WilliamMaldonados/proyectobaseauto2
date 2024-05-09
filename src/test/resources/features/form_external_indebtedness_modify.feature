@@ -16,4 +16,4 @@ Feature: Declare to the Republic Bank an External Indebtedness
 
     Examples:
       | F3_INPUT_NUMBER_MOD|F3_NUMBER_LOAN_ENDORSEMENT|F3_INPUT_NAME_CREDITOR|F3_INPUT_COIN_NEGOTIATION|F3_INPUT_COIN_HIRING| F3_INPUT_NAME_F3  | F3_INPUT_ID_F3  |
-      |       68632        |      1223prueba     |           pepito     |              150        |        150         |     PruebaAutomod    |    103365447865   |
+      |       69076        |      1223prueba     |           pepito     |              150        |        150         |     PruebaAutomod    |    103365447865   |

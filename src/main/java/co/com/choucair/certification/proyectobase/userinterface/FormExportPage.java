@@ -13,7 +13,7 @@ public class FormExportPage extends PageObject {
     public static final Target F2_TYPE_OPERATION2 = Target.the("Selector code and number").located(By.xpath("/html/body/app-sub-root/app-root/div/div/div[2]/app-container/main/div/app-form/div/form/div[1]/div[2]/div/div/div/div[2]/select/option[3]"));
     public static final Target F2_TYPE_OPERATION3 = Target.the("Selector modfify").located(By.xpath("/html/body/app-sub-root/app-root/div/div/div[2]/app-container/main/div/app-form/div/form/div[1]/div[2]/div/div/div/div[2]/select/option[5]"));
     public static final Target F2_BTN_CALENDAR= Target.the("Btn Calendar").located(By.xpath("(//button[@id='Btn_b3_calendar'])[1]"));
-    public static final Target F2_DATA_PICKER= Target.the("Data picker").located(By.xpath("//*[@id=\"ngb-panel-0\"]/div/div/div[2]/div/div/div/ngb-datepicker/div[2]/div/ngb-datepicker-month/div[6]/div[1]/div"));
+    public static final Target F2_DATA_PICKER= Target.the("Data picker").located(By.xpath("/html/body/app-sub-root/app-root/div/div/div[2]/app-container/main/div/app-form/div/form/ngb-accordion/div[1]/div[2]/div/div/div[2]/div/div/div/ngb-datepicker/div[2]/div/ngb-datepicker-month/div[3]/div[4]/div"));
     public static final Target F2_INPUT_NUMBER_MOD= Target.the("NUmber of Form").located(By.xpath("(//input[@id='b3_number'])[1]"));
     public static final Target F2_SELECTOR_ACCOUNT = Target.the("Selector account").located(By.xpath("(//select[@id='b2_codeAndNumber'])[1]"));
     public static final Target F2_ACCOUNT = Target.the("Selector code coin").located(By.xpath("/html/body/app-sub-root/app-root/div/div/div[2]/app-container/main/div/app-form/div/form/div[2]/div/div[4]/select/option[4]"));

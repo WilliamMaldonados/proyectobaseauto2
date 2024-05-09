@@ -12,4 +12,4 @@ Feature: Declare to the Republic Bank an Import of Goods
     Then the user should see the operation registered for import goods with type of operation Modify
     Examples:
       |F1_INPUT_NUMBER_MOD  |F1_INPUT_AMOUNT|F1_INPUT_CURRENCY_AMOUNT_2|F1_INPUT_AMOUNT_2|F1_TEXT_AREA|F1_IMPORTATION_NUMBER|F1_IMPORTATION_VALUE|
-      |         6827   |      140      |          170              |        170       |    pruebamodifynew  |        150          |          150       |
+      |         6950        |      140      |          170              |        170       |    pruebamodifynew  |        150          |          150       |

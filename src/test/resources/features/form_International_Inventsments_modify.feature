@@ -14,4 +14,4 @@ Feature: Declare to the Republic Bank an International Investments
 
     Examples:
       |F4_INPUT_NUMBER_MOD |F4_INPUT_PHONE|F4_INPUT_DOC|F4_INPUT_NAME|F4_INPUT_VALUE_COIN|F4_INPUT_VALUE_USD|F4_INPUT_CHANGE|F4_INPUT_ACTIONS|F4_INPUT_PARTICIPANTS|
-      |        26121      |   3124567675 | 10336789543|    PepitoMod|         2500      |         2400      |       150   |       32       |           12        |
+      |        69077     |   3124567675 | 10336789543|    PepitoMod|         2500      |         2400      |       150   |       32       |           12        |

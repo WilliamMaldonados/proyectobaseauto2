@@ -14,4 +14,4 @@ Feature: Declare to the Republic Bank an International Investments
 
     Examples:
       |F2_INPUT_NUMBER_MOD  |F2_INPUT_VALOR_COIN|F2_TEXT_AREA_OBSERVATION|F2_NUMBER_EXPORTATION|F2_INPUT_VALOR_INTEGER2|
-      |                4753   |       212         |        Pruebamopdifyform2     |         250         |          212          |
+      |         6951        |       212         |        Pruebamopdifyform2     |         250         |          212          |

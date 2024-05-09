@@ -20,7 +20,7 @@ public class FormExternalIndebtednessPage extends PageObject {
     public static final Target F3_SELECTOR_ACCOUNT= Target.the("Selector Account Compensation").located(By.xpath("/html/body/app-sub-root/app-root/div/div/div[2]/app-container/main/div/app-form/div/form/div[2]/div/div[5]/select"));
     public static final Target F3_TYPE_ACCOUNT = Target.the("Type Account Compensation").located(By.xpath("/html/body/app-sub-root/app-root/div/div/div[2]/app-container/main/div/app-form/div/form/div[2]/div/div[5]/select/option[4]"));
     public static final Target F3_BTN_CALENDAR= Target.the("Btn Calendar").located(By.xpath("(//button[@id='btn_b3_calendar'])[1]"));
-    public static final Target F3_DATA_PICKER= Target.the("Data picker").located(By.xpath("(//div[contains(text(),'19')])[1]"));
+    public static final Target F3_DATA_PICKER= Target.the("Data picker").located(By.xpath("/html/body/app-sub-root/app-root/div/div/div[2]/app-container/main/div/app-form/div/form/ngb-accordion/div[1]/div[2]/div/div/div[2]/div/div/div/ngb-datepicker/div[2]/div/ngb-datepicker-month/div[3]/div[4]/div"));
     public static final Target F3_INPUT_NUMBER_MOD= Target.the("NUmber of Form").located(By.xpath("(//input[@id='numberBlockthree'])[1]"));
     public static final Target F3_NUMBER_LOAN_ENDORSEMENT= Target.the("Input Number loan aval").located(By.xpath("(//input[@id='loanNumberBlockFour'])[1]"));
     public static final Target F3_CODE_COIN_STIPULATE= Target.the("Selector code coin estipulate").located(By.xpath("(//select[@id='currencyCodeBlockFour'])[1]"));
