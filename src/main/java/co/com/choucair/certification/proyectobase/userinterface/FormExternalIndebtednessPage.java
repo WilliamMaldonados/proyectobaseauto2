@@ -11,6 +11,7 @@ public class FormExternalIndebtednessPage extends PageObject {
     public static final Target F3_BTN_NEW_FORM = Target.the("BNT New Form").located(By.xpath("//button[@id='nuevoFormulario3']"));
     public static final Target F3_SELECTOR_TYPE= Target.the("Selector code and number").located(By.xpath("(//select[@id='numberBlockOne'])[1]"));
     public static final Target F3_TYPE = Target.the("Type code and number").located(By.xpath("(//option[normalize-space()='1. INICIAL'])[1]"));
+    public static final Target F3_TYPE2 = Target.the("Type code and number").located(By.xpath("/html/body/app-sub-root/app-root/div/div/div[2]/app-container/main/div/app-form/div/form/div[1]/div[2]/div/div[1]/div[2]/select/option[3]"));
     public static final Target F3_TYPE3 = Target.the("Type code and number").located(By.xpath("/html/body/app-sub-root/app-root/div/div/div[2]/app-container/main/div/app-form/div/form/div[1]/div[2]/div/div[1]/div[2]/select/option[5]"));
     public static final Target F3_SELECTOR_OPERATION = Target.the("Selector operation").located(By.xpath("(//select[@id='operationBlockOne'])[1]"));
     public static final Target F3_OPERATION = Target.the("Type of operation").located(By.xpath("(//option[normalize-space()='I. Ingreso de Divisas'])[1]"));
